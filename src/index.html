@@ -7,10 +7,35 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body class="h-screen bg-gradient-to-r from-slate-500 to-slate-800 pt-2 flex justify-center items-center">
-    <section class="h-[200px] w-[400px] bg-amber-50 flex flex-row justify-between gap-2">
+<body class="content-main">
+    <section class="p-4 bg-gray-100 hover:bg-gray-400 rounded-2xl h-20 group duration-300">
+    <button class=" bg-amber-600 p-2 group-hover:bg-red-600">Enviar</button>
+    </section>
+<div class="group/card p-6 bg-gray-400 rounded-lg hover:bg-gray-100">
+    <h2 class="text-xl font-bold">Card principal</h2>
+    <button class="mt-4 px-4 py-2 bg-blue-500 text-white group-hover/card:bg-red-500">
+        Btn principal
+    </button>
+
+    <div class="group/subcard p-6 bg-white rounded-lg mt-4 hover:bg-amber-600">
+        <h3 class="text-xl font-bold">Card secundario</h3>
+        <button class="mt-4 px-2 py-2 bg-green-500 text-white group-hover/subcard:bg-pink-500">
+        Btn secundario
+        </button>
+    </div>
+</div>
+
+    <!--<div class="bg-blue-700 sm:col-span-2 md:col-span-3 lg:col-span-4 relative">
+        <div class="h-[80px] w-[80px] absolute bg-amber-50 bottom-0 right-0 rounded-b-full p-2 hover:bg-amber-400 transition-all duration-300 ease-linear shadow-2xl shadow-fuchsia-400 animate-card">Caja Absoluta</div>
+    </div>
+    <div class="bg-red-400 font-negrita">2</div>
+    <div class="bg-green-700">3</div>
+    <div class="bg-amber-400 font-negrita">4</div>
+    <div class="bg-black font-blanca">5</div>
+    <div class="bg-violet-400 font-negrita">6</div>
+        <section class="h-[200px] w-[400px] bg-amber-50 flex flex-row justify-between gap-2">
         <span class="bg-amber-400">bloque 1</span>
         <span class="bg-fuchsia-500">bloque 1</span>
-    </section>
+    </section> -->
 </body>
 </html>

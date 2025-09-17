@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@keyframes rotateleft{
+    0%,
+    100%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+}
+
+.animate-card{
+    animation: rotateleft 1s ease-in-out infinite; 
+}
+
+.content-main{
+    @apply h-screen bg-gradient-to-b from-slate-500 to-slate-800 p-[20px] grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 flex flex-col;
+}
+
+.font-negrita{
+    @apply font-bold
+}
+
+.font-blanca{
+    @apply text-white
+}
