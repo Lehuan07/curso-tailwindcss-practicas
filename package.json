@@ -1,9 +1,11 @@
 {
+  "name": "curso-tailwindcss-practicas",
+  "version": "1.0.0",
   "scripts": {
-    "dev":"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx @tailwindcss/cli -i \"./src/0-teoria/input.css\" -o \"./src/0-teoria/output.css\" --watch"
   },
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.13",
+  "devDependencies": {
     "tailwindcss": "^4.1.13"
   }
 }
+
