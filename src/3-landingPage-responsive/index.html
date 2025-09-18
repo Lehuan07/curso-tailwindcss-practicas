@@ -9,38 +9,41 @@
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
 </head>
 <body class="bg-[#ACF9FA] text-[10px]">
-    <div class="text-[1.6rem] grid grid-cols-3 ">
+    <div class="text-[1.6rem] grid grid-rows-[auto,1fr,auto] min-h-screen justify-between">
         
         <!-- Header --> 
-        <header class="p-[1rem] w-full col-span-3 h-[4rem]">
+        <header class="p-[1rem] w-full col-span-3 h-[4rem] md:flex md:justify-between transition-all duration-300 ease-in-out">
         <h4 class="text-[1rem] font-bold">TAILWIND</h4>
-            <ul class="list-none text-[1rem] hidden">
-                <li class="mr-2 cursor-default">Primer elemento</li>
-                <li class="mr-2 cursor-default">Segundo elemento</li>
-                <li class="mr-2 cursor-default">Tercer elemento</li>
+            <ul class="list-none text-[1rem] hidden md:flex ">
+                <li class="mr-2 cursor-default md:cursor-pointer hover:text-gray-600 transition-all duration-300 ease-in-out">Home</li>
+                <li class="mr-2 cursor-default md:cursor-pointer  hover:text-gray-600 transition-all duration-300 ease-in-out">Acerca de</li>
+                <li class="mr-2 cursor-default md:cursor-pointer  hover:text-gray-600 transition-all duration-300 ease-in-out">Contacto</li>
             </ul>
         </header>
 
         <!-- Main -->
-        <main class=" p-[1rem] w-full col-span-3 border flex flex-col items-center justify-center">
+        <main class="p-[1rem] w-full col-span-3 flex flex-col items-center justify-center h-full md:flex-row transition-all duration-300 ease-in-out">
+            <div class="">
             <div class="h-[9rem] w-[9rem] mr-[7rem]">
                 <iconify-icon icon="devicon:tailwindcss" width="140" height="140" ></iconify-icon>
             </div>
-                <div class="flex flex-col items-center content-center">
+                <div class="flex flex-col items-center content-center md:items-start transition-all duration-300 ease-in-out">
                 <h1 class="font-bold text-5xl">Entrenamos?</h1>
                 <span class="text-[1rem] m-6">Tailwind es <br>cool!</span>
                 <button class="w-30 h-10 bg-black text-white rounded-3xl text-[1rem] cursor-pointer mb-9">Entrenar</button>
             </div>
-            <div class="w-[5rem]">
+            </div>
+            <div class="w-[4rem] md:w-[10rem] transition-all duration-300 ease-in-out">
                 <img src="./img/vegeta.png" alt="El principe Sayashing" class="w-auto h-auto">
             </div>
         </main>
 
         <!-- Footer -->
-        <footer class="">
-        <ul>
-            <li><a href="#">Tailwind Page</a></li>
-            <li><a href="#">Company</a></li>
+        <footer class="h-[4rem] w-full col-span-3 self-end">
+        <ul class="h-full w-full flex flex-row items-center justify-center text-[1rem]">
+            <li class=""><a href="#">Tailwind Page</a></li>
+            <div class="border-r-2 border-black p-2 mr-1"></div>
+            <li class="m-2"><a href="#">Company</a></li>
         </ul>
         </footer>
 
